@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>豆瓣</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <script src="js/rem.js"></script>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <div class="header">
+    <a href="#"><h1>豆瓣</h1></a>
+    <div class="nav">
+      <ul>
+        <li><a href="#" style="color: #2384E8;">电影</a></li>
+        <li><a href="#" style="color: #9F7860;">图书</a></li>
+        <li><a href="#" style="color: #E4A813;">广播</a></li>
+        <li><a href="#" style="color: #2AB8CC;">小组</a></li>
+      </ul>
+    </div>
+    <div class="search"><a href="https://m.douban.com/movie/nowintheater?loc_id=108288">  
+    </a></div>
+  </div>
+  
+  <div class="content">
+    <div class="title">
+    <h1>影院电影</h1>
+  </div>
+
+  <section class="list">
+    <ul>
+     <!-- 内部是列表信息 -->
+    </ul>
+  </section>
+  </div>
+<script type="text/template" id="tpl">
+  {{each subjects as value i}}
+       <li><a href="{{value.alt}}">
+        <img data-src="{{value.images.small}}" class="lazyload"  alt="">
+        <h3>{{value.title}}</h3>
+        <p class="rank">
+          <i class="iconfont">&#xe601;</i>
+          <i class="iconfont">&#xe601;</i>
+          <i class="iconfont">&#xe601;</i>
+          <i class="iconfont">&#xe601;</i>
+          <i class="iconfont">&#xe601;</i>
+          <span>{{value.rating.average}}</span>
+        </p>
+      </a></li>
+  {{/each}}
+</script>
+<script src="js/jquery-1.12.0.min.js"></script>
+<script src="js/lazysizes.min.js" async=""></script>
+<script src="js/template.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

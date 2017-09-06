@@ -1,0 +1,334 @@
+@charset "utf-8";
+/* 禁用iPhone中Safari的字号自动调整 */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  /* 解决IOS默认滑动很卡的情况 */
+  -webkit-overflow-scrolling: touch;
+}
+/* 禁止缩放表单 */
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input[type="search"],
+input {
+  resize: none;
+  border: none;
+  outline: none;
+}
+/* 取消链接高亮  */
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* 设置HTML5元素为块 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+/* 图片自适应 */
+img {
+  width: 100%;
+  height: auto;
+  width: auto\9;
+  /* ie8 */
+  display: block;
+  -ms-interpolation-mode: bicubic;
+  /*为了照顾ie图片缩放失真*/
+}
+/* 初始化 */
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: 12px/1.5 'Microsoft YaHei', '宋体', Tahoma, Arial, sans-serif;
+  color: #555;
+  background-color: #f1f1f1;
+}
+em,
+i {
+  font-style: normal;
+}
+ul,
+li {
+  list-style-type: none;
+}
+strong {
+  font-weight: normal;
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: #969696;
+  font-family: 'Microsoft YaHei', Tahoma, Arial, sans-serif;
+}
+a:hover {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-family: 'Microsoft YaHei';
+}
+img {
+  border: none;
+}
+input {
+  font-family: 'Microsoft YaHei';
+}
+/*单行溢出*/
+/*多行溢出 手机端使用*/
+/* 水平垂直居中的公共类 */
+/* 水平居中公共类 */
+/* 垂直居中公共类 */
+body {
+  width: 100%;
+  color: #494949;
+  background-color: #fff;
+  font-family: -apple-system, "Droid Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+.header {
+  height: 46px;
+  border-bottom: 1px solid #f3f3f3;
+  position: relative;
+  padding: 0 18px;
+}
+.header > a {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.header > a h1 {
+  width: 46px ;
+  height: 22px;
+  font-size: 0;
+  background: url(../images/douban.png) 0 0 no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+.header .search {
+  width: 24px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 18px;
+  background: url(../images/search.png) 0 0 no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+.header .nav {
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 42px;
+  font-size: 15px;
+  line-height: 20px;
+}
+.header .nav li {
+  float: left;
+  width: 50px;
+  height: 20px;
+}
+.content .title {
+  padding: 12px 20px 4px 30px;
+}
+.content .title h1 {
+  font-size: 24px;
+  font-weight: normal;
+}
+@media (min-width: 0) {
+  .content .list ul {
+    padding: 0 16px;
+    zoom: 1;
+  }
+  .content .list ul:after {
+    content: "";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+  }
+  .content .list ul li a {
+    width: 33.333333%;
+    float: left;
+    padding: 0 0.4rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 0;
+    margin: 0.5rem 0 0 0;
+  }
+  .content .list ul li a h3 {
+    font-size: 0.325rem;
+    text-align: center;
+    padding: 0.125rem 0 0;
+    color: #000;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .content .list ul li a p {
+    text-align: center;
+  }
+  .content .list ul li a p .iconfont {
+    font-size: 0.3rem;
+    color: #ccc;
+    letter-spacing: 0;
+  }
+  .content .list ul li a p .iconfont.rate {
+    color: #ffb300;
+  }
+  .content .list ul li a p span {
+    font-size: 0.3rem;
+  }
+}
+@media (min-width: 600px) {
+  html,
+  body {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .content .list ul {
+    padding: 0 16px;
+    zoom: 1;
+  }
+  .content .list ul:after {
+    content: "";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+  }
+  .content .list ul li a {
+    width: 20%;
+    float: left;
+    padding: 0 16px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 0;
+    margin: 20px 0 0 0;
+  }
+  .content .list ul li a h3 {
+    font-size: 13px;
+    text-align: center;
+    padding: 5px 0 0;
+  }
+  .content .list ul li a p > i {
+    font-size: 12px;
+    color: #ccc;
+  }
+  .content .list ul li a p > i.rate {
+    color: #ffb300;
+  }
+  .content .list ul li a p span {
+    font-size: 12px;
+    padding-left: 4px;
+  }
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('../css/iconfont.eot');
+  src: url('../css/iconfont.eot?#iefix') format('embedded-opentype'), url('../css/iconfont.woff') format('woff'), url('../css/iconfont.ttf') format('truetype'), url('../css/iconfont.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
